@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<ul class="message">
+		
+	</ul>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var messages = $('.message');
+
+		var server = io.connect('http://localhost:8080');
+		server.on('messages', function(data) {
+
+			// server.emit('messages', {hello:'hi'});
+
+			$('<li></li>', {
+				text: data.hello
+			}).appendTo(messages);
+		});
+	</script>
+</body>
+</html>

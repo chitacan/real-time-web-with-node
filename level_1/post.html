@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+<h1>Something to save</h1>
+<form action="#">
+	<textarea name="content" id="content" cols="30" rows="10"></textarea>
+	<p><button type="submit">save</button></p>
+</form>
+
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$('form').on('submit', function(e) {
+		$.post('http://localhost:8080', $(this).serialize(), function(data) {
+			console.log(data);
+		});
+		e.preventDefault();
+	});
+</script>
+</body>
+</html>
