@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<ul class="message">
+		
+	</ul>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var messages = $('.message');
+
+		var insertChatter = function(name) {
+
+			console.log(name);
+			
+			// throw li to ul
+			$('<li></li>', {
+				text: name
+			}).appendTo(messages);
+		}
+
+		var removeChatter = function(name) {
+
+		}
+
+		var server = io.connect('http://localhost:8080');
+
+		server.on('connect', function(data) {
+
+			// ask nick name
+			nickName = prompt('what is your name');
+
+			server.emit('join', nickName);
+
+		});
+
+		server.on('add chatter',insertChatter);
+	</script>
+</body>
+</html>
