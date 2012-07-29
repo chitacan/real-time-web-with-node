@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>file view</title>
+	<link rel="stylesheet" href="/css/style.css" type="text/css"> 
+</head>
+
+<body id="scrollBody">
+	<center>
+	<div class='bodyContent'> <!-- 920px -->
+		<img src="/img/top_title.gif" />
+		
+		<div name="inner" id="content">
+			
+			<script id="template" type="text/x-handlebars-template">
+				<div class='blank30'></div>
+				<hr class='distributeLine'/>
+				<div class='title'>Acqired Date: {{time}}</div>
+				<hr class='distributeLine'/>
+				<div class='blank25'></div>
+				<table class='information'>
+					<tr>
+						<td width='200px'>Telephone Number : </td>
+						<td>{{tel}}</td>
+					</tr>
+					<tr>
+						<td width='200px'>App Name : </td>
+						<td>{{appname}}</td>
+					</tr>
+					<tr>
+						<td width='200px'>Package Name : </td>
+						<td>{{packagename}}</td>
+					</tr>
+					<tr>
+						<td width='200px'>Email : </td>
+						<td>{{email}}</td>
+					</tr>
+					<tr>
+						<td width='200px'>Phone Location : </td>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<a style="font-family:Courier;font-size: 12pt;color: #ff0000;border: 0px" href="{{location}}">{{location}}</a>
+									</td>
+									<td>
+										<a style="font-family:Courier;font-size: 12pt;color: #ff0000;border: 0px" href="{{location}}">
+											<img src="/img/icon_map.gif" width="10" height="14" border='0'/>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">Captured Image from Phone</td>
+					</tr>
+					<tr>
+						<td width="920px" colspan="2">
+							<img src="{{imagePath}}" width="320px" height="533px" /></br>
+						</td>
+					</tr>
+				</table>
+			</script>
+
+		</div>
+	</div>
+	</center>
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
+	<script src="/js/client.js"></script>
+</body>
+
+</html>

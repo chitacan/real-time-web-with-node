@@ -1,0 +1,98 @@
+div.bodyContent
+{
+	width: 920px;
+	text-align: left;
+}
+div.blank25
+{
+	width: 920px;
+	height: 25px;
+}
+div.blank30
+{
+	width: 920px;
+	height: 30px;
+}
+hr.distributeLine
+{
+	border: 1px solid #3b3b3b;
+	margin: 0px;
+}
+div.title
+{
+	width: 920px;
+	margin: 0px;
+	text-align:left;
+	color: #ff00ff;
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 12pt;
+	height: 25px;
+	vertical-align: middle;
+	padding-top: 7px;
+
+}
+table.information
+{
+	width: 920px;
+	padding: 0px;
+	margin: 0px;
+	color: #00ff00;
+	font-family: Courier;
+	font-size: 12pt;
+}
+body
+{
+	background-color: #000000;
+}
+td.message
+{
+	border-collapse:collapse; 
+	padding: 0px; 
+	margin: 0px;
+	width: 485px;
+	height: 20px;
+}
+td.messageContent
+{
+	border-collapse:collapse; 
+	padding: 0px; 
+	margin: 0px;
+	background-color: #5aff00;
+	width: 485px;
+	height: 30px;
+	font-family: Courier;
+	font-size: 12pt;
+	color: #000000;
+}
+
+a:link
+{
+	padding: 0px; 
+	margin: 0px;
+	font-family: Courier;
+	font-size: 12pt;
+	color: #ff0000;
+	border: 0px;	
+}
+
+
+a:visited
+{
+	padding: 0px; 
+	margin: 0px;
+	font-family: Courier;
+	font-size: 12pt;
+	color: #ff0000;
+	border: 0px;	
+} 
+a:active
+{
+	padding: 0px; 
+	margin: 0px;
+	font-family: Courier;
+	font-size: 12pt;
+	color: #ff0000;
+	border: 0px;	
+}
+
