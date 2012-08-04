@@ -63,11 +63,21 @@ io.of('/otp_socket').on('connection', function(client) {
 // serve file_view.html
 app.get('/file_view', function(req, res) {
 	res.sendfile(__dirname + '/file_view.html');
+
+	// 'data' directory does not exists, create it.
+	if (!fs.existsSync('./data')) {
+		fs.mkdirSync('./data', '0755');
+	}
 });
 
 // serve otp_view.html
 app.get('/otp_view', function(req, res) {
 	res.sendfile(__dirname + '/otp_view.html');
+
+	// 'data' directory does not exists, create it.
+	if (!fs.existsSync('./data')) {
+		fs.mkdirSync('./data', '0755');
+	}
 });
 
 // handle post reuqest
