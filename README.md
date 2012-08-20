@@ -1,4 +1,4 @@
-# Node.js Cousrse Examples
+# Node.js Course Examples
 
 Code School's [Real-time Web with Node.js](http://www.codeschool.com/courses/real-time-web-with-nodejs) cousrse Examples.
 
